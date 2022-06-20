@@ -11,7 +11,9 @@ export default function Header() {
           <h1 className={styles.name}>Laurence Zanotti</h1>
           <h2 className={styles.title}>Front-end Web Developer</h2>
           <p className={styles.description}>Projetando e construindo interfaces de usuário e experiências inesquecíveis</p>
-          <div className={styles.baixar_btn}>BAIXAR CV</div>
+          <a href="/cv.pdf" download>
+            <div className={styles.baixar_btn}>BAIXAR CV</div>
+          </a>
           <div className={styles.scroll_icon}>
               <div className={styles.ball}></div>
           </div>
