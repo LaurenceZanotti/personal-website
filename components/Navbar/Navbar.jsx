@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.container_navbar}>
-        <div class={styles.language_selector} id="language_selector">
+        <div className={styles.language_selector} id="language_selector">
           <div className={styles.active_language}><img src={brazil} alt="" /></div>
           <div><img src={usa} alt="" /></div>
         </div>

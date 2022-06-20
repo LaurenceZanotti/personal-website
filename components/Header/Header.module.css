@@ -5,9 +5,16 @@
     height: 100vh;
     text-align: center;
     padding: 0 2em;
+
 }
 
 .gradient_bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    flex-wrap: wrap;
     position: absolute;
     top: 0;
     left: 0;
@@ -23,7 +30,8 @@
     height: 180px;
     border: 3px solid #FFF;
     border-radius: 50%;
-    margin: 2em auto;
+    margin-top: 3em;
+    margin-bottom: -2em;
 }
 
 .name {
@@ -39,14 +47,12 @@
 
 .description {
     font-weight: bold;
-    margin: 5em 0;
 }
 
 .baixar_btn {
     border: 3px solid #fff;
     border-radius: 15em;
     width: 15em;
-    margin: auto;
     font-weight: bold;
     font-size: large;
     padding: .5em;
@@ -64,7 +70,6 @@
     border-radius: 5px;
     width: 3em;
     height: 5em;
-    margin: 5em auto
 }
 
 .ball {
