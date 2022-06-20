@@ -1,0 +1,46 @@
+.container_navbar {
+    background: rgba(255, 255, 255, 0.75);
+    width: 95%;
+    height: 3em;
+    margin: auto;
+    border-radius: 0 0 16px 16px;
+    backdrop-filter: blur(4px);
+    color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_navbar ul {
+    list-style-type: none;
+}
+
+.language_selector {
+    display: flex;
+}
+
+.active_language {
+    background-color: white;
+    padding: .4em;
+    border-radius: 40%;
+    margin: 0 1em;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.active_language + div {
+    margin: 0;
+    padding: .4em;
+    cursor: pointer
+}
+
+.invisible {
+    display: none
+}
+
+.hamburguer {
+    font-size: larger;
+    margin-right: 1em;
+    cursor: pointer;
+}
