@@ -10,7 +10,7 @@ export default function Header() {
         <div className={styles.profile_picture}></div>
         <div>
           <h1 className={styles.name}>Laurence Zanotti</h1>
-          <h2 className={styles.title}>Front-end Web Developer</h2>
+          <h2 className={styles.title}>Desenvolvedor Web Front end</h2>
         </div>
         <p className={styles.description}>Projetando e construindo interfaces de usuário e experiências inesquecíveis</p>
         <a href="/cv.pdf" download>
