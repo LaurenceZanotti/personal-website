@@ -1,18 +1,17 @@
 .container_navbar {
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(9, 12, 13, 0.75);
     width: 90%;
     height: 3em;
     margin: auto;
     border-radius: 0 0 16px 16px;
     backdrop-filter: blur(4px);
-    color: black;
+    /* color: black; */
     position: absolute;
     top: 0;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
 }
 
 .container_navbar ul {
@@ -28,7 +27,7 @@
 }
 
 .active_language {
-    background-color: white;
+    background-color: #090c0d;
     padding: .4em;
     border-radius: 40%;
     margin: 0 1em;

@@ -19,8 +19,6 @@ export default function Header() {
       <div className={styles.scroll_icon}>
           <div className={styles.ball}></div>
       </div>
-      {/* <div className={styles.gradient_bg}>
-      </div> */}
     </header>
   )
 }
