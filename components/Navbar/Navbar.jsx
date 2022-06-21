@@ -23,10 +23,10 @@ export default function Navbar() {
       </div>
       {menuActive && 
       <ul className={styles.menu_container}>
-          <li>Home</li>
-          <li>Projetos</li>
-          <li>Formação</li>
-          <li>Contato</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#work">Projetos</a></li>
+          <li><a href="#academic">Formação</a></li>
+          <li><a href="#contact">Contato</a></li>
       </ul>}
       {menuActive ?
       <div className={styles.hamburguer} onClick={handleClick}>

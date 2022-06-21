@@ -4,7 +4,7 @@ import styles from './Header.module.css'
 export default function Header() {
 
   return (
-    <header className={styles.container_header}>
+    <header className={styles.container_header} id="home">
       <Navbar />
 
       <div className={styles.profile_picture}></div>

@@ -2,7 +2,7 @@ import AcademicItem from "./AcademicItem";
 
 export default function Academic() {
   return (
-    <section className="container-academic">
+    <section className="container-academic" id="academic">
         <div className="black-fade"></div>
         <h2>Onde estudei</h2>
         <AcademicItem 

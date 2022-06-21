@@ -48,5 +48,9 @@
 .hamburguer {
     font-size: larger;
     margin-right: 1em;
+}
+
+.menu_container li:hover, .hamburguer:hover {
     cursor: pointer;
+    color: #d2d2d2;
 }

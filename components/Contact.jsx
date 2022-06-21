@@ -4,7 +4,7 @@ import { FaChevronUp } from 'react-icons/fa';
 
 export default function Contact() {
   return (
-    <section className="container-contact">
+    <section className="container-contact" id="contact">
         <h2>Entre em contato</h2>
         <form action="">
           <div>

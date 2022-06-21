@@ -2,7 +2,7 @@ import WorkItem from "./WorkItem";
 
 export default function Work() {
   return (
-    <section className="container-work">
+    <section className="container-work" id="work">
         <h2>Projetos Recentes</h2>
         <p>Confira meus trabalhos mais recentes. Também tem muito mais no <a href="https://github.com/LaurenceZanotti">GitHub</a> ou no <a href="#">blog</a>!</p>
         <div className="container-work-items">
