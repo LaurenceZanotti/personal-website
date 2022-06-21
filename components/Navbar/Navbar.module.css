@@ -5,7 +5,6 @@
     margin: auto;
     border-radius: 0 0 16px 16px;
     backdrop-filter: blur(4px);
-    /* color: black; */
     position: absolute;
     top: 0;
 
@@ -19,7 +18,15 @@
 }
 
 .navbar_expanded {
+    animation-name: expand;
+    animation-duration: 1s;
     height: 7em;
+}
+
+.navbar_collapsed {
+    animation-name: collapse;
+    animation-duration: 1s;
+    height: 3em;
 }
 
 .language_selector {
@@ -43,6 +50,13 @@
 
 .menu_container {
     font-weight: bold;
+    opacity: 0;
+}
+
+.menu_container_unfade {
+    animation-name: unfade;
+    animation-duration: 1s;
+    opacity: 100%;
 }
 
 .hamburguer {
@@ -53,4 +67,31 @@
 .menu_container li:hover, .hamburguer:hover {
     cursor: pointer;
     color: #d2d2d2;
+}
+
+@keyframes expand {
+    from {
+        height: 3em;
+    }
+    to {
+        height: 7em;
+    }
+}
+
+@keyframes collapse {
+    0% {
+        height: 7em;
+    }
+    100% {
+        height: 3em;
+    }
+}
+
+@keyframes unfade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
