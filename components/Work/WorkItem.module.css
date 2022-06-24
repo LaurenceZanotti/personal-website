@@ -1,0 +1,52 @@
+.item_img {
+    background-size: contain;
+    width: 100%;
+    border-radius: 6px;
+}
+
+div.container_work_item > h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+div.container_work_item > p {
+    font-size: 12px;
+}
+
+.saiba_mais_btn {
+    border: 2px solid #FFF;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12em;
+    height: 3em;
+    font-size: 12px;
+    margin: 2em 0;
+    transition: background-color .3s, color .3s;
+}
+
+.saiba_mais_btn:hover {
+    background-color: #FFF;
+    color: black;
+    font-weight: bold;
+}
+
+.saiba_mais_btn:active {
+    background-color: black;
+    color: white;
+}
+
+.achou_interessante {
+    background-size: contain;
+    width: 100%;
+    height: 186px;
+    border-radius: 6px;
+    border: 3px solid #FFF;
+
+    /* Icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+}

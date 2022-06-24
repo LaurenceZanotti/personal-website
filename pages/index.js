@@ -1,5 +1,5 @@
 import Header from "../components/Header/Header";
-import Work from "../components/Work";
+import Work from "../components/Work/Work";
 import Academic from "../components/Academic";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
