@@ -28,19 +28,25 @@ export default function Contact() {
             <button>Enviar</button>
           </div>
         </form>
-        <p>ou se preferir...</p>
-        <div>
+        <div className={styles.socials_container}>
+          <p>ou se preferir...</p>
           <div>
-            <AiFillLinkedin/>
-            Linkedin
+            <div className={styles.linkedin}>
+              <a href="https://linkedin.com/in/laurence-zanotti">
+                <AiFillLinkedin/>
+                <span>Linkedin</span>
+              </a>
+            </div>
+            <div className={styles.github}>
+              <a href="https://github.com/LaurenceZanotti">
+                <span>Github</span>
+                <AiFillGithub/>
+              </a>
+            </div>
           </div>
-          <div>
-            Github
-            <AiFillGithub/>
-          </div>
-        </div>
 
-        <p>Voltar ao topo <FaChevronUp/></p>
+          <a href="#home">Voltar ao topo <FaChevronUp/></a>
+        </div>
     </section>
   )
 }

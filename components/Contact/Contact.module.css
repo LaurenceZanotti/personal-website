@@ -1,7 +1,3 @@
-.container_contact {
-    
-}
-
 .container_contact h2 {
     text-align: center;
     font-size: 22px;
@@ -59,3 +55,40 @@
     color: white;
 }
 
+.socials_container {
+    margin: 0 3em;
+    text-align: center;
+}
+
+.socials_container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials_container span {
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    margin: 0 .5em;
+}
+
+.linkedin a {
+    display: flex;
+    align-items: center;
+    color: #005DB4;
+    font-size: 2em;
+}
+
+.github a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 2em;
+}
+
+.socials_container > a {
+    display: inline-block;
+    font-size: 12px;
+    margin: 2em;
+}
