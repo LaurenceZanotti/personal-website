@@ -1,0 +1,7 @@
+.footer_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84px;
+    font-size: 12px;
+}
