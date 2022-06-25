@@ -32,6 +32,7 @@ export default function Work() {
             title="Achou interessante?" 
             description="Confira meu GitHub. Há muitos projetos interessantes por lá!" 
             link="https://github.com/LaurenceZanotti"
+            button="Acessar GitHub"
           />
         </div>
     </section>

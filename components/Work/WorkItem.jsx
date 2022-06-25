@@ -14,7 +14,11 @@ export default function WorkItem(props) {
         {image}
         <h3>{props.title}</h3>
         <p>{props.description}</p>
-        <a href={props.link} className={styles.saiba_mais_btn}>Saiba mais</a>
+        <a href={props.link} className={styles.saiba_mais_btn}>{props.button}</a>
     </div>
   )
+}
+
+WorkItem.defaultProps = {
+  button: 'Saiba mais'
 }
