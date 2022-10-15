@@ -12,7 +12,7 @@ export default function Header() {
         <h1 className={styles.name}>Laurence Zanotti</h1>
         <h2 className={styles.title}>Desenvolvedor Web Full stack</h2>
       </div>
-      <p className={styles.description}>Projetando e construindo interfaces de usuário e experiências inesquecíveis</p>
+      <p className={styles.description}>Projetando e construindo soluções web completas e experiências inesquecíveis</p>
       <a href="/cv.pdf" className={styles.baixar_btn} download>
         BAIXAR CV
       </a>
