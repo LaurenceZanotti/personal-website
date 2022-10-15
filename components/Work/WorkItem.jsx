@@ -14,7 +14,7 @@ export default function WorkItem(props) {
         {image}
         <h3 className='mt-3'>{props.title}</h3>
         <p>{props.description}</p>
-        <a href={props.link} className={styles.saiba_mais_btn} target="_blank">{props.button}</a>
+        <a href={props.link} className={styles.saiba_mais_btn} target="_blank" rel='noreferrer'>{props.button}</a>
     </div>
   )
 }

@@ -2,11 +2,8 @@
 import styles from './Contact.module.css'
 
 // Ícones
-import { AiFillLinkedin, AiOutlineInstagram , AiFillGithub } from 'react-icons/ai';
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { FaChevronUp } from 'react-icons/fa';
-
-// Next
-import Image from 'next/image'
 
 export default function Contact() {
   return (
@@ -38,20 +35,20 @@ export default function Contact() {
           <div className='mt-4'>
             <div>
               <AiFillLinkedin color={"005DB4"} size={32}/>
-              <a href="https://linkedin.com/in/laurence-zanotti" target="_blank">
+              <a href="https://linkedin.com/in/laurence-zanotti" target="_blank" rel='noreferrer'>
                 <span>Linkedin</span>
               </a>
             </div>
             <div>
               {/* <AiOutlineInstagram className='bg-clip-border bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500' size={32} /> */}
               <img src="/instagram.png" alt="Instagram logo" className='m-auto'/>
-              <a href="https://instagram.com/laurencezanotti" target="_blank">
+              <a href="https://instagram.com/laurencezanotti" target="_blank" rel='noreferrer'>
                 <span>Instagram</span>
               </a>
             </div>
             <div>
               <AiFillGithub size={32} />
-              <a href="https://github.com/LaurenceZanotti" target="_blank">
+              <a href="https://github.com/LaurenceZanotti" target="_blank" rel='noreferrer'>
                 <span>Github</span>
               </a>
             </div>
