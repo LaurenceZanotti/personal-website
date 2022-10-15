@@ -1,7 +1,12 @@
+// Styles
 import styles from './Contact.module.css'
-import { AiFillLinkedin } from 'react-icons/ai';
-import { AiFillGithub } from 'react-icons/ai';
+
+// Ícones
+import { AiFillLinkedin, AiOutlineInstagram , AiFillGithub } from 'react-icons/ai';
 import { FaChevronUp } from 'react-icons/fa';
+
+// Next
+import Image from 'next/image'
 
 export default function Contact() {
   return (
@@ -30,22 +35,28 @@ export default function Contact() {
         </form>
         <div className={styles.socials_container}>
           <p>ou se preferir...</p>
-          <div>
-            <div className={styles.linkedin}>
-              <a href="https://linkedin.com/in/laurence-zanotti">
-                <AiFillLinkedin/>
+          <div className='mt-4'>
+            <div>
+              <AiFillLinkedin color={"005DB4"} size={32}/>
+              <a href="https://linkedin.com/in/laurence-zanotti" target="_blank">
                 <span>Linkedin</span>
               </a>
             </div>
-            <div className={styles.github}>
-              <a href="https://github.com/LaurenceZanotti">
+            <div>
+              {/* <AiOutlineInstagram className='bg-clip-border bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500' size={32} /> */}
+              <img src="/instagram.png" alt="Instagram logo" className='m-auto'/>
+              <a href="https://instagram.com/laurencezanotti" target="_blank">
+                <span>Instagram</span>
+              </a>
+            </div>
+            <div>
+              <AiFillGithub size={32} />
+              <a href="https://github.com/LaurenceZanotti" target="_blank">
                 <span>Github</span>
-                <AiFillGithub/>
               </a>
             </div>
           </div>
-
-          <a href="#home">Voltar ao topo <FaChevronUp/></a>
+          <a href="#home" className='mt-2'>Voltar ao topo <FaChevronUp className='inline'/></a>
         </div>
     </section>
   )

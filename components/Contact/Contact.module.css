@@ -68,9 +68,7 @@
 
 .socials_container span {
     display: inline-block;
-    color: white;
     font-size: 12px;
-    margin: 0 .5em;
 }
 
 .linkedin a {
@@ -90,5 +88,4 @@
 .socials_container > a {
     display: inline-block;
     font-size: 12px;
-    margin: 2em;
 }

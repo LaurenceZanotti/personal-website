@@ -13,7 +13,7 @@ export default function Work() {
             img="jobfindr_mockup.jpg"
             title="Jobfindr" 
             description="Plataforma que facilita o encontro de profissionais com seus futuros empregadores e caçadores de talentos. Feito em Next.js e Django (wip)" 
-            link="#work"
+            link="https://github.com/LaurenceZanotti/cs50web-capstone"
           />
           <WorkItem 
             img="followphone_mockup.png"
