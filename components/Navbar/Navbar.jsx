@@ -1,7 +1,6 @@
 import styles from './Navbar.module.css'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { MdLanguage } from 'react-icons/md';
 
 import { useState } from 'react';
 
@@ -21,9 +20,12 @@ export default function Navbar() {
       ${menuActive && styles.navbar_expanded} 
       ${(firstMenuOpen && !menuActive) && styles.navbar_collapsed}
     `}>
-      <div className={styles.language_selector} id="language_selector">
+      {/* <div className={styles.language_selector} id="language_selector">
         <MdLanguage/>
-      </div>
+      </div> */}
+      <span className='font-thin text-xl mx-2 px-2 border-r border-r-white'>
+        Laurence Zanotti 
+      </span>
       {menuActive && 
       <ul className={`
         ${styles.menu_container} 
