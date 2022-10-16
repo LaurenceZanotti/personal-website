@@ -2,7 +2,7 @@ import styles from "./AcademicItem.module.css"
 
 export default function AcademicItem(props) {
   return (
-    <div className={`${styles.container_academic_item} ${props.inverted && styles.inverted}`}>
+    <div className={`${styles.container_academic_item} ${props.inverted ? styles.inverted : ''}`}>
       <div className={styles.logo}>
         <img src={`imgs/${props.logo}-logo.png`} alt={`Logo ${props.logo}`} />
       </div>

@@ -3,9 +3,21 @@ import styles from "./Academic.module.css"
 
 export default function Academic() {
   return (
-    <section className={styles.container_academic} id="academic">
-        <div className="black-fade"></div>
-        <h2>Formação</h2>
+    <section className="
+      px-4 
+      sm:px-48 
+      bg-cover 
+      bg-black/[.85]
+      bg-book-bg 
+      bg-blend-multiply
+      flex 
+      flex-col 
+      items-center
+      " 
+      id="academic"
+    >
+        <div className="h-64 w-full bg-gradient-to-b from-black"></div>
+        <h2 className="text-center my-4 text-base lg:text-3xl">Formação</h2>
         <AcademicItem 
           logo="estacio"
           school="Universidade Estácio de Sá"
@@ -34,7 +46,7 @@ export default function Academic() {
           end_year="2017"
           inverted="inverted"
         />
-        <div className="black-fade"></div>
+        <div className="h-64 w-full bg-gradient-to-t from-black"></div>
     </section>
   )
 }
