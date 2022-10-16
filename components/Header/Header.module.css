@@ -1,6 +1,7 @@
 .container_header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url('/imgs/monitor-bg.jpg');
-    background-size: 250%;
+    background-size: cover;
+    background-position-y: center;
 
     height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
