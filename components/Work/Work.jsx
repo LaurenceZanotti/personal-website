@@ -5,10 +5,10 @@ export default function Work() {
   return (
     <section className={styles.container_work} id="work">
         <div className={styles.header}>
-          <h2>Projetos Recentes</h2>
-          <p>Confira meus trabalhos mais recentes. Também tem muito mais no <a href="https://github.com/LaurenceZanotti">GitHub</a>.</p>
+          <h2 className="text-base lg:text-3xl m-auto lg:mb-2">Projetos Recentes</h2>
+          <p className="text-xs lg:text-base">Confira meus trabalhos mais recentes. Também tem muito mais no <a href="https://github.com/LaurenceZanotti">GitHub</a>.</p>
         </div>
-        <div className="container_work_items">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <WorkItem 
             img="jobfindr_mockup.jpg"
             title="Jobfindr" 
@@ -28,7 +28,7 @@ export default function Work() {
             link="https://github.com/LaurenceZanotti/countfin-app"
           />
           <WorkItem 
-            img=""
+            img="blackbg.png"
             title="Achou interessante?" 
             description="Confira meu GitHub. Há muitos projetos interessantes por lá!" 
             link="https://github.com/LaurenceZanotti"
