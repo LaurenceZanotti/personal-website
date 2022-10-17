@@ -10,11 +10,15 @@ export default function WorkItem(props) {
     </div>
 
   return (
-    <div className={styles.container_work_item}>
+    <div className='m-auto lg:m-16 xl:m-32'>
+        <div>
         {image}
-        <h3>{props.title}</h3>
-        <p>{props.description}</p>
-        <a href={props.link} className={styles.saiba_mais_btn}>{props.button}</a>
+        </div>
+        <div>
+          <h3 className='mt-3 text-base sm:text-xl font-bold'>{props.title}</h3>
+          <p className='text-xs lg:text-sm'>{props.description}</p>
+          <a href={props.link} className={`text-xs lg:text-sm ${styles.saiba_mais_btn}`} target="_blank" rel='noreferrer'>{props.button}</a>
+        </div>
     </div>
   )
 }

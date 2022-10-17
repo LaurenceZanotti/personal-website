@@ -1,6 +1,7 @@
 .container_header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url('/imgs/monitor-bg.jpg');
-    background-size: 250%;
+    background-size: cover;
+    background-position-y: center;
 
     height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
     height: calc(var(--vh, 1vh) * 100);
@@ -16,11 +17,16 @@
 }
 
 .profile_picture {
-    background-image: url('/imgs/profile-picture.jpeg');
+    background-image: url('/imgs/profile-picture.png');
     background-size: cover;
+    background-position-y: center;
 
-    width: 180px;
-    height: 180px;
+    /* Fallback */
+    min-width: 180px;
+    min-height: 180px;
+    /* Responsive */
+    min-width: calc(180px + 5vw);
+    min-height: calc(180px + 5vw);
     border: 3px solid #FFF;
     border-radius: 50%;
     margin-top: 3em;
@@ -30,12 +36,13 @@
 .name {
     font-size: 36px;
     margin-bottom: 0;
+    height: 1.2em;
 }
 
 .title {
     margin-top: 0;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 .description {

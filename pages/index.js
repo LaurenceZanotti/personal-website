@@ -3,7 +3,9 @@ import Work from "../components/Work/Work";
 import Academic from "../components/Academic/Academic";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
+
 import { useEffect } from "react";
+import Head from 'next/head'
 
 export default function Home() {
   
@@ -21,6 +23,10 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Laurence Zanotti | Full Stack Web Developer</title>
+        <meta property="og:title" content="Laurence Zanotti | Full Stack Web Developer" key="title" />
+      </Head>
       <Header />
       <main>
         <Work />

@@ -10,15 +10,6 @@
     margin-bottom: 1em;
 }
 
-.header > h2 {
-    font-size: 1.375em;
-    margin: auto;
-}
-
-.header > p {
-    font-size: 0.75em;
-}
-
 .header a {
     color: #00A8E8;
 }
