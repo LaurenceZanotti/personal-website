@@ -1,6 +1,4 @@
-// import AcademicItem from "./AcademicItem";
 import AcademicItem from "./AcademicItem";
-import styles from "./Academic.module.css"
 
 export default function Academic() {
   return (
@@ -16,8 +14,8 @@ export default function Academic() {
       " 
       id="academic"
     >
-        <div className="h-64 w-full bg-gradient-to-b from-black"></div>
-        <h2 className="text-center my-4 text-base lg:text-3xl font-bold">Formação</h2>
+        <div className="h-32 sm:h-64 w-full bg-gradient-to-b from-black"></div>
+        <h2 className="text-center my-4 text-lg lg:text-3xl font-bold">Formação</h2>
         <div className="text-center">
           <AcademicItem logo="estacio" className="flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between items-center gap-4 w-9/12 sm:w-[22rem] m-auto sm:min-w-[26rem] border-b border-white">
             <h3 className="school text-lg font-bold">Universidade Estácio de Sá</h3>
@@ -40,7 +38,7 @@ export default function Academic() {
             <p className="periodo">2016 - 2017</p>
           </AcademicItem>
         </div>
-        <div className="h-64 w-full bg-gradient-to-t from-black"></div>
+        <div className="h-32 sm:h-64 w-full bg-gradient-to-t from-black"></div>
     </section>
   )
 }

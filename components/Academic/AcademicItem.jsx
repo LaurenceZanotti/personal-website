@@ -1,5 +1,3 @@
-// import styles from "./AcademicItem.module.css"
-
 export default function AcademicItem(props) {
   return (
     <div className={`academic-item-container py-6 ${props.className}`}>
