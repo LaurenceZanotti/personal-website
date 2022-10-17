@@ -7,6 +7,7 @@
 
 .logo {
     width: 100%;
+    max-width: 12rem;
     flex: 1 0 0;
     align-self: center;
     background-color: #FFF;
@@ -21,6 +22,7 @@
 .item_content {
     flex: 1 1 10em;
     align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 0 1em;
 }

@@ -1,20 +1,19 @@
-import styles from "./AcademicItem.module.css"
+// import styles from "./AcademicItem.module.css"
 
 export default function AcademicItem(props) {
   return (
-    <div className={`${styles.container_academic_item} ${props.inverted ? styles.inverted : ''}`}>
-      <div className={styles.logo}>
-        <img src={`imgs/${props.logo}-logo.png`} alt={`Logo ${props.logo}`} />
+    <div className={`academic-item-container py-6 ${props.className}`}>
+      <div className="academic-item-image w-[8rem] h-[8rem] bg-white rounded-full p-4 flex justify-center items-center">
+        {props.logo ? <img src={`imgs/${props.logo}-logo.png`} alt={`Logo ${props.logo}`} /> : null}
       </div>
-      <div className={styles.item_content}>
-        <h3>{props.school}</h3>
-        <p>{props.course}</p>
-        <p>{props.start_year} - {props.end_year}</p>
+      <div className="academic-item-body max-w-xs">
+        {props.children}
       </div>
     </div>
   )
 }
 
 AcademicItem.defaultProps = {
-  end_year: "em andamento"
+  // end_year: "em andamento"
+  logo: null
 }
