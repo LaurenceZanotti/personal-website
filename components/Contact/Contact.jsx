@@ -32,7 +32,7 @@ export default function Contact() {
         </form>
         <div className={styles.socials_container}>
           <p>ou se preferir...</p>
-          <div className='mt-4'>
+          <div className='my-8'>
             <div>
               <AiFillLinkedin color={"005DB4"} size={32}/>
               <a href="https://linkedin.com/in/laurence-zanotti" target="_blank" rel='noreferrer'>
@@ -40,7 +40,6 @@ export default function Contact() {
               </a>
             </div>
             <div>
-              {/* <AiOutlineInstagram className='bg-clip-border bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500' size={32} /> */}
               <img src="/instagram.png" alt="Instagram logo" className='m-auto'/>
               <a href="https://instagram.com/laurencezanotti" target="_blank" rel='noreferrer'>
                 <span>Instagram</span>
@@ -53,7 +52,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <a href="#home" className='mt-2'>Voltar ao topo <FaChevronUp className='inline'/></a>
+          <a href="#home" className='my-8'>Voltar ao topo <FaChevronUp className='inline'/></a>
         </div>
     </section>
   )
