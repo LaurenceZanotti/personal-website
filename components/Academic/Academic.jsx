@@ -24,12 +24,12 @@ export default function Academic() {
           </AcademicItem>
           <AcademicItem logo="harvard" className="flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between items-center gap-4 w-9/12 sm:w-[22rem] m-auto sm:min-w-[26rem] sm:flex-row-reverse  border-b border-white">
             <h3 className="school text-lg font-bold">Harvard CS50 Web</h3>
-            <p className="curso">CS50's Web Programming with Python and JavaScript</p>
+            <p className="curso">CS50&#39;s Web Programming with Python and JavaScript</p>
             <p className="periodo">2021 - em andamento</p>
           </AcademicItem>
           <AcademicItem logo="harvard" className="flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between items-center gap-4 w-9/12 sm:w-[22rem] m-auto sm:min-w-[26rem] border-b border-white">
             <h3 className="school text-lg font-bold">Harvard CS50</h3>
-            <p className="curso">CS50's Introduction to Computer Science</p>
+            <p className="curso">CS50&#39;s Introduction to Computer Science</p>
             <p className="periodo">Setembro 2020 - Dezembro 2020</p>
           </AcademicItem>
           <AcademicItem logo="etec" className="flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between items-center gap-4 w-9/12 sm:w-[22rem] m-auto sm:min-w-[26rem] sm:flex-row-reverse border-b border-white">
