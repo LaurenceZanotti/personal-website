@@ -14,6 +14,5 @@ export default function AcademicItem(props) {
 }
 
 AcademicItem.defaultProps = {
-  // end_year: "em andamento"
   logo: null
 }
