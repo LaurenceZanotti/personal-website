@@ -1,5 +1,15 @@
-# laurencezanotti.dev
+# Personal Website
 
-Repositório do meu site pessoal
+#TODO - Hero banner print
 
-Protótipo: https://www.figma.com/file/JozjTVbHJIYQi0KQneiFU1/laurencezanotti.dev?node-id=174%3A115
+A personal website.
+
+## How to run
+
+## How to test
+
+## How to deploy
+
+## Contributing
+
+## Contacts
