@@ -1,0 +1,46 @@
+services:
+  personal-website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: personal-website:latest
+    container_name: personal-website-app
+
+    # Host port 3000 -> nginx on 8080, bound to localhost only.
+    ports:
+      - "127.0.0.1:3000:8080"
+
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 128M
+        reservations:
+          cpus: '0.25'
+          memory: 32M
+
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+    # Everything nginx writes lives in /tmp.
+    read_only: true
+    tmpfs:
+      - /tmp
+
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1:8080/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 2s
+
+    restart: unless-stopped
+
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

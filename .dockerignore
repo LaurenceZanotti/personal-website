@@ -1,0 +1,47 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Version control & CI/CD
+.github
+.gitlab-ci.yml
+.travis.yml
+
+# Dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# IDE & editor configs
+.vscode
+.idea
+*.swp
+*.swo
+*.swn
+.DS_Store
+
+# Build artifacts (out/ is the payload this image serves)
+.next
+dist
+build
+
+# Documentation & assets
+README.md
+LICENSE
+CHANGELOG.md
+docs
+
+# Testing
+.jest
+.coverage
+cypress
+
+# Development tools
+Makefile
+docker-compose.yml
