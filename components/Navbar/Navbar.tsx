@@ -1,8 +1,10 @@
-import styles from './Navbar.module.css'
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { AiOutlineCloseCircle } from 'react-icons/ai';
+'use client'
 
-import { useState } from 'react';
+import { useState } from 'react'
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { AiOutlineCloseCircle } from 'react-icons/ai'
+
+import styles from './Navbar.module.css'
 
 export default function Navbar() {
   const [menuActive, setMenuActive] = useState(false)
@@ -10,18 +12,18 @@ export default function Navbar() {
 
   function handleClick() {
     // Switch menu state
-    setMenuActive(prevState => !prevState)
+    setMenuActive((prevState) => !prevState)
     setFirstMenuOpen(true)
   }
 
   return (
     <nav className={`
-      ${styles.container_navbar} 
-      ${menuActive && styles.navbar_expanded} 
+      ${styles.container_navbar}
+      ${menuActive && styles.navbar_expanded}
       ${(firstMenuOpen && !menuActive) && styles.navbar_collapsed}
     `}>
       <span className='font-thin text-xl mx-2 px-2 border-r border-r-white whitespace-nowrap'>
-        Laurence Zanotti 
+        Laurence Zanotti
       </span>
       {/* Desktop menu options */}
       <ul className="hidden sm:flex gap-8 font-bold">
@@ -31,9 +33,9 @@ export default function Navbar() {
           <li><a className='hover:text-slate-400' href="#contact">Contato</a></li>
       </ul>
       {/* Mobile hamburguer menu options */}
-      {menuActive && 
+      {menuActive &&
       <ul className={`
-        ${styles.menu_container} 
+        ${styles.menu_container}
         ${menuActive && styles.menu_container_unfade}
         sm:hidden
       `}>

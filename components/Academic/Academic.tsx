@@ -1,20 +1,20 @@
-import AcademicItem from "./AcademicItem";
+import AcademicItem from './AcademicItem'
 
 export default function Academic() {
   return (
     <section className="
-      bg-cover 
+      bg-cover
       bg-black/[.85]
-      bg-book-bg 
+      bg-[url('/imgs/book-bg.jpg')]
       bg-blend-multiply
-      flex 
-      flex-col 
+      flex
+      flex-col
       items-center
       overflow-hidden
-      " 
+      "
       id="academic"
     >
-        <div className="h-32 sm:h-64 w-full bg-gradient-to-b from-black"></div>
+        <div className="h-32 sm:h-64 w-full bg-linear-to-b from-black"></div>
         <h2 className="text-center my-4 text-lg lg:text-3xl font-bold">Formação</h2>
         <div className="text-center">
           <AcademicItem logo="estacio" className="flex flex-wrap sm:flex-nowrap justify-evenly sm:justify-between items-center gap-4 w-9/12 sm:w-[22rem] m-auto sm:min-w-[26rem] border-b border-white">
@@ -38,8 +38,7 @@ export default function Academic() {
             <p className="periodo">2016 - 2017</p>
           </AcademicItem>
         </div>
-        <div className="h-32 sm:h-64 w-full bg-gradient-to-t from-black"></div>
+        <div className="h-32 sm:h-64 w-full bg-linear-to-t from-black"></div>
     </section>
   )
 }
-

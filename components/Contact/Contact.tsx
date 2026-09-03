@@ -2,8 +2,9 @@
 import styles from './Contact.module.css'
 
 // Ícones
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import { FaChevronUp } from 'react-icons/fa';
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import { FaChevronUp } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function Contact() {
   return (
@@ -24,7 +25,7 @@ export default function Contact() {
           </div>
           <div className={`${styles.input_container} ${styles.textarea_container}`}>
             <label htmlFor="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="" cols="30" rows="10" placeholder='Escreva sua mensagem' />
+            <textarea name="mensagem" id="" cols={30} rows={10} placeholder='Escreva sua mensagem' />
           </div>
           <div className={`${styles.input_container} ${styles.btn_container}`}>
             <button>Enviar</button>
@@ -40,7 +41,7 @@ export default function Contact() {
               </a>
             </div>
             <div>
-              <img src="/instagram.png" alt="Instagram logo" className='m-auto'/>
+              <Image src="/instagram.png" alt="Instagram logo" className='m-auto' width={32} height={32}/>
               <a href="https://instagram.com/laurencezanotti" target="_blank" rel='noreferrer'>
                 <span>Instagram</span>
               </a>
