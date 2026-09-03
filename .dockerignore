@@ -1,0 +1,35 @@
+# Dependencies
+node_modules
+
+# Build output
+.next
+out
+dist
+build
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# Version control
+.git
+.gitignore
+.gitattributes
+.github
+
+# IDE & editor configs
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store
+
+# Docker
+Dockerfile*
+.dockerignore
+compose*.yml
+compose*.yaml
+
+# Docs
+README.md
